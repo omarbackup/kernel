@@ -124,9 +124,9 @@ CPU 8086  ; enable assembler warnings to limit instruction set
 %define TRYLBAREAD       1              ; undefine to use only CHS int 13h
 %define SETROOTDIR       1              ; if defined dir entry copied to 0:500
 %define LOOPONERR        1              ; if defined on error simply loop forever
-;%define RETRYALWAYS     1              ; if defined retries read forever
-;%define WINBOOT         1              ; use win9x kernel calling conventions (name & jmp addr)
-;%define MSCOMPAT        1              ; sets default filename to MSDOS IO.SYS
+%define RETRYALWAYS     1              ; if defined retries read forever
+%define WINBOOT         1              ; use win9x kernel calling conventions (name & jmp addr)
+%define MSCOMPAT        1              ; sets default filename to MSDOS IO.SYS
 
 %ifdef WINBOOT                          ; if set also change from PC-DOS to 
 %ifndef MSCOMPAT                        ; kernel name to MS-DOS kernel name
@@ -205,7 +205,7 @@ Entry:          jmp     short real_start
 ;       Instead of zero-fill,
 ;       initialize BPB with values suitable for a 1440 K floppy
 ;
-                db 'IBM  5.0'   ; OEM label
+                db 'Unknown'  ; OEM label
                 dw 512          ; bytes per sector
                 db 1            ; sectors per cluster
                 dw 1            ; reserved sectors
