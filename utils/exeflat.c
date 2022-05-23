@@ -357,7 +357,7 @@ int main(int argc, char **argv)
   int compress_sys_file;
   char *buffer, *tmpexe, *cmdbuf;
   FILE *dest;
-  long size;
+  short size;
 
   /* if no arguments provided, show usage and exit */
   if (argc < 4) usage();
@@ -435,7 +435,7 @@ int main(int argc, char **argv)
   if (system(cmdbuf))
   {
     printf("Problems executing %s\n", cmdbuf);
-    printf("Removing [%s]\n", tmpexe);
+    printf("Removing Executable [%s]\n", tmpexe);
     remove(tmpexe);
     exit(1);
   }
