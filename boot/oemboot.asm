@@ -2,7 +2,7 @@
 ; File:
 ;                          oemboot.asm
 ;                      2004, Kenneth J. Davis
-;                Copyright (c) 200?, <add name here>
+;                Copyright (c) 2022, Tobey
 ; Description:
 ; OEM boot sector for FreeDOS compatible with IBM's (R) PC-DOS,
 ; and Microsoft's (R) MS-DOS.  It may work with older OpenDOS/DR-DOS,
@@ -69,8 +69,8 @@
 ;                           DOS-C boot
 ;
 ;                   Copyright (c) 1997, 2000-2004
-;               Svante Frey, Jim Hall, Jim Tabor, Bart Oldeman,
-;             Tom Ehlert, Eric Auer, Luchezar Georgiev, Jon Gentle
+;               Svante Frey, Jim Hall, Jim Tabor, Bart Oldeman, ---- ------
+;             ,Tom Ehlert, Eric Auer, Luchezar Georgiev, Jon Gentle
 ;             and Michal H. Tyc (DR-DOS adaptation, boot26dr.asm)
 ;                      All Rights Reserved
 ;
